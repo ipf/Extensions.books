@@ -1,0 +1,5 @@
+<f:for each="{tags}" as="tag">
+	<f:link.action action="list" arguments="{tag: tag}" class="label label-info">
+		{tag.name}
+	</f:link.action>
+</f:for>

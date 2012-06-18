@@ -1,0 +1,15 @@
+{namespace b=Tx_Books_ViewHelpers}
+<h1>
+	{book.title} ({book.category.title})<br />
+	<f:render partial="Tags" arguments="{tags: book.tags}" />
+</h1>
+<h3>by {book.author}</h3>
+
+<f:if condition="{book.cover}">
+	<f:image src="uploads/tx_books/{book.cover}" alt="{book.title}" width="100" />
+</f:if>
+
+{book.excerpt -> f:format.html()}
+
+<hr />
+<f:link.action action="list" class="btn"><i class="icon-circle-arrow-left"></i> Back</f:link.action>

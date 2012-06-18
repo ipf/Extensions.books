@@ -1,0 +1,21 @@
+plugin.tx_books {
+	view {
+		templateRootPath = {$plugin.tx_books.view.templateRootPath}
+		partialRootPath = {$plugin.tx_books.view.partialRootPath}
+		layoutRootPath = {$plugin.tx_books.view.layoutRootPath}
+		defaultPid = auto
+		widget {
+			Tx_Fluid_ViewHelpers_Widget_PaginateViewHelper.templateRootPath = {$plugin.tx_books.view.templateRootPath}
+		}
+	}
+	persistence {
+		storagePid = {$plugin.tx_books.persistence.storagePid}
+	}
+	mvc {
+		throwPageNotFoundExceptionIfActionCantBeResolved = 1
+	}
+	features {
+		rewrittenPropertyMapper = 1
+		skipDefaultArguments = 1
+	}
+}

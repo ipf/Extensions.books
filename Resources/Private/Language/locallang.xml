@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>module</type>
+		<description>Language labels for the Books extension</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="tx_books_domain_model_book">Book</label>
+			<label index="tx_books_domain_model_book.title">title</label>
+			<label index="tx_books_domain_model_book.author">author</label>
+			<label index="tx_books_domain_model_book.excerpt">excerpt</label>
+			<label index="tx_books_domain_model_book.cover">cover</label>
+			<label index="tx_books_domain_model_book.category">category</label>
+			<label index="tx_books_domain_model_book.tags">tags</label>
+			<label index="tx_books_domain_model_category">Category</label>
+			<label index="tx_books_domain_model_category.title">title</label>
+			<label index="tx_books_domain_model_tag">Tag</label>
+			<label index="tx_books_domain_model_tag.title">name</label>
+		</languageKey>
+	</data>
+</T3locallang>

@@ -1,0 +1,14 @@
+plugin.tx_books {
+	view {
+		# cat=plugin.tx_books/file; type=string; label=Path to template root (FE)
+		templateRootPath = EXT:books/Resources/Private/Templates/
+		# cat=plugin.tx_books/file; type=string; label=Path to template partials (FE)
+		partialRootPath = EXT:books/Resources/Private/Partials/
+		# cat=plugin.tx_books/file; type=string; label=Path to template layouts (FE)
+		layoutRootPath = EXT:books/Resources/Private/Layouts/
+	}
+	persistence {
+		# cat=plugin.tx_books//a; type=string; label=Default storage PID
+		storagePid = 
+	}
+}

@@ -1,0 +1,7 @@
+<ul class="tagcloud nostlye">
+	<f:for each="{tags}" as="tag">
+		<f:link.action action="list" arguments="{tag: tag.uid}" class="label label-info popularity-{tag.popularity}">
+			{tag.name}
+		</f:link.action>
+	</f:for>
+</ul>

@@ -1,0 +1,10 @@
+<h1>Book collection</h1>
+<ul>
+	<f:for each="{books}" as="book">
+		<li>
+			<f:link.action action="show" arguments="{book: book}">
+				{book.title}
+			</f:link.action>
+		</li>
+	</f:for>
+</ul>

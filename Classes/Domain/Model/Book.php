@@ -118,6 +118,20 @@ class Tx_Books_Domain_Model_Book extends Tx_Extbase_DomainObject_AbstractEntity 
 	}
 
 	/**
+	 * @return array
+	 */
+	public function getCoverArray() {
+		return explode(',', $this->cover);
+	}
+
+	/**
+	 * @return string
+	 */
+	public function getFirstCover() {
+		return array_shift($this->getCoverArray());
+	}
+
+	/**
 	 * @param string $cover
 	 * @return void
 	 */

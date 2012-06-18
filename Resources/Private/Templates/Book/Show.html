@@ -6,7 +6,11 @@
 <h3>by {book.author}</h3>
 
 <f:if condition="{book.cover}">
-	<f:image src="uploads/tx_books/{book.cover}" alt="{book.title}" width="100" />
+	<f:for each="{book.coverArray}" as="cover">
+		<a href="{f:uri.image(src: 'uploads/tx_books/{cover}', maxWidth: 600, maxHeight: 600)}" class="tx-books-cover lightbox">
+			<f:image src="uploads/tx_books/{cover}" alt="{book.title}" width="100" />
+		</a>
+	</f:for>
 </f:if>
 
 {book.excerpt -> f:format.html()}
